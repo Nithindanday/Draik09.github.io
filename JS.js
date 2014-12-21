@@ -3,10 +3,10 @@ function toggle() {
 	var text = document.getElementById("displayText");
 	if(ele.style.display == "block") {
     	ele.style.display = "none";
-		text.innerHTML = "[<sup>show</sup>]";
+		text.innerHTML = "<sup>show</sup>";
   	}
 	else {
 		ele.style.display = "block";
-		text.innerHTML = "[<sup>hide</sup>]";
+		text.innerHTML = "<sup>hide</sup>";
 	}
 }
