@@ -47,3 +47,7 @@ h2 { text-align: center; padding: 5px; margin: 10px; background: #fff2b6; color:
    background: url(../images/window.png) no-repeat bottom center;
    text-indent: -9999px;
 }
+
+#projects {
+	text-align: center;
+}
