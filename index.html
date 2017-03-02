@@ -1,85 +1,61 @@
-<!DOCTYPE html>
-<html class="no-js">
+<!DOCTYPE html><html><head>    
+    <meta charset="UTF-8">
 
-<head>
-	<meta charset="UTF-8">
-	
-	<title>Draik09's Webpage | Home</title>
 
-	<link href="css/style.css" rel="stylesheet">
+    <meta name="generator" content="Silex v2.2.7">
 
-	<script src="js/modernizr-1.5.min.js"></script>
-</head>
+    <script type="text/javascript" src="js/jquery.js" data-silex-static=""></script>
+    <script type="text/javascript" src="js/jquery-ui.js" data-silex-static=""></script>
+    <script type="text/javascript" src="js/pageable.js" data-silex-static=""></script>
+    <script type="text/javascript" src="js/front-end.js" data-silex-static=""></script>
+    <link rel="stylesheet" href="css/normalize.css" data-silex-static="">
+    <link rel="stylesheet" href="css/front-end.css" data-silex-static="">
+    
+    
+    
+    <title></title>
+    
 
-<body>
-    <div id="LogoIsh" style="text-align:center;"><img src="logoish.png"></div>
-    <h1>Home Menu</h1>
-    <h2>The new home menu!</h2>
-    <p style="text-align:center;"><i>Please note that the email function does not work at the moment. If you want to send a email, send to <a href="MAILTO:draik0909@gmail.com"><b>draik0909@gmail.com</b></a></i></p>
 
-	<ul id="garagedoor">
-		<li id="shutter1"><a href="http://draik09.github.io/D09MB">Link 1</a></li>
-		<li id="shutter2"><a href="http://draik09.github.io/EM">Link 2</a></li>
-		<li id="shutter3"><a href="https://www.youtube.com/user/Draik09/videos?shelf_id=5&sort=dd&view=0x">Link 3</a></li>
-		<li id="shutter4"><a href="https://draik09.github.io/Text-Survival">Link 4</a></li>
-	</ul>
-	
-	
-	<div id="projects">
-		<h2>Projects:</h2>
-		<ul>
-			<li id="Text-Survival"><a href="https://draik09.github.io/Text-Survival">Text Survival</a></li>
-		</ul>
-	</div>
-		
-	<script>
-	
-		var jQueryScriptOutputted = false;
-		
-		function initJQuery() {
-		    
-		    if (typeof(jQuery) == 'undefined') {
-		    
-		        if (!jQueryScriptOutputted) {
-		            jQueryScriptOutputted = true;
-		            
-		            // Primitive way of loading scripts (no library yet)
-		            document.write("<scr" + "ipt src=\"http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js\"></scr" + "ipt>");
-		        }
-		        setTimeout("initJQuery()", 50);
-		        
-		    } else {
-		    	
-		    	// jQuery way of loading scripts
-		    	$.getScript('js/jquery.backgroundPosition.js', function() {
-		    		
-		    		// Just for demo
-		    		$("h2").text('This Browser is using a jQuery fallback for this effect.');
-		         
-		            // Set CSS in Firefox (Required to use the backgroundPosition js)
-					$('#shutter1').css({backgroundPosition: '0px 0px'});
-					$('#shutter2').css({backgroundPosition: '0px 0px'});
-					$('#shutter3').css({backgroundPosition: '0px 0px'});
-					$('#shutter4').css({backgroundPosition: '0px 0px'});
-		
-					// Animate the Shutter  
-					$("#garagedoor a").hover(function() {	
-					      $(this).parent().stop().animate({backgroundPosition: '(0px -100px)'}, 500);
-					    }, function() {
-					      $(this).parent().stop().animate({backgroundPosition: '(0px 0px)'}, 500);
-					});
-					
-		    	});
-		
-		    }
-		            
-		}
-		
-		if (!Modernizr.csstransitions) {
-			initJQuery();
-		}
-	</script>
-	
-</body>
 
-</html>
+
+
+
+
+
+
+
+
+
+
+    <style id="current-page-style">
+        .page-page-1{display:inherit; }
+    </style>
+    
+    <!-- Silex HEAD tag do not remove -->
+    <!-- End of Silex HEAD tag do not remove -->
+    <link href="css/styles.css" rel="stylesheet">    <script src="js/script.js" type="text/javascript"></script></head><body class="body-initial silex-runtime silex-published">
+    <div class="silex-pages">
+        <div data-silex-type="image" class="editable-style silex-id-hamburger-menu image-element menu-button prevent-draggable prevent-resizable" data-silex-id="silex-id-hamburger-menu">
+            <img alt="open mobile menu" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAoCAYAAAC8cqlMAAAB5UlEQVR42u2ZPWvCUBSGM+UfFO3e3dLu/QN+oKj4EUXRQREEJYgoiCAu6qCogyDo7iJ21UUaKqEgCC4iiEMGB3UVgsnpTWj/wfVK2nvhGbKEPJyT996TMMzPGg6H5mKx+GgkyuWyeTQasb8OTDwef4tEIp8+n+/LYIjJZJJHQiwzm81M6OLDarWqNpsNjEYgEJCy2ewT0+/3TagighElNFAnQT6ft1ARKkJFqMgfFvF4PFpuEwFtdrcRqVarIIoirFYrIiyXSxiPx+B2u/GJBINBuF6vQHopigK1Wg2fCMdxcLlciIuoqgqNRgOfiN1uB3Qwg91uB8fjkQiHwwEmkwne1qLxS0VuKKJle71eh06nQ4Rmswk8z+MVcTqdsNlsQJZlotF7Pp8hk8ngE4lGo/qN7xG/vV4Pb0Xm8zlxkdPpBGgMx/+yJxIJKBQKRMjlcuBwOGhq/Q+RcDgMsViMCFrAuFwu/CKDwQC22y1IkkSE/X4PgiDo+xc2Ea0S9zjGa/Hb7Xbxifj9fj0K7yFSqVTwtlY6nYbpdKpPiSRYLBbQarX0PYymFhWhIlSEilCRW6GdyUqlkoVZr9dsKpXiOY6TtW+7BkNBz/7ebrcf9L+6Xq+XRYPMMyrTq5EIhUIvaAjTJb4BBNQ2yhnth0wAAAAASUVORK5CYII=" class="silex-element-content">
+        </div>
+        <a id="page-page-1" data-silex-type="page" class="page-element page-link-active">Page 1</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <div data-silex-type="text" class="editable-style silex-id-1488498264261-3 text-element" data-silex-id="silex-id-1488498264261-3">
+        <div class="silex-element-content normal">
+            <h1 style="text-align: center;" class="heading1"><span style="font-weight: normal;"><font face="verdana, sans-serif">Welcome to my Writing Page!<br>On this page I will post my pieces of writing.</font></span></h1></div>
+    </div>
+
+
+</body></html>
