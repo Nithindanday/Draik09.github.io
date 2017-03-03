@@ -1,9 +1,12 @@
 
         .body-initial {
             background-color: rgba(255,255,255,1); 
+            background-image: url('../assets/Orange%20Simple%20Gradient.jpg'); 
+            background-attachment: fixed; 
         }
         .silex-id-1488498264261-3 {
             width: 100%; 
             min-height: 20px; 
+            background-image: url('../assets/Orange%20Simple%20Gradient.jpg'); 
         }
     
